@@ -1,4 +1,3 @@
-
 /* Base reset */
 * {
   margin: 0;
@@ -49,8 +48,8 @@ input {
 input:checked~label .menu-hamb {
   background: #fff;
   width: 100vw;
-  height:45vh;
-  position:unset;
+  height: 45vh;
+  position: unset;
 }
 
 .hamburguer {
@@ -218,7 +217,7 @@ img {
 }
 
 .projects-section-header {
-  max-width: 640px;
+  max-width: 800px;
   margin: 0 auto 6rem auto;
 }
 
@@ -230,13 +229,15 @@ img {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
   grid-gap: 4rem;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
-  margin-bottom: 6rem;
-  
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+
 }
 
 @media (max-width: 30.625em) {
@@ -249,16 +250,18 @@ img {
   }
 }
 
-
 .project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
+  height: calc(90% - 3rem);
+  width: 85%;
   object-fit: cover;
 }
 
 .project-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 2rem 0.5rem;
+  width: 85%;
+  text-align: center;
+  justify-content: center;
 }
 
 .project:hover {
@@ -277,7 +280,7 @@ img {
   font-size: 2.5rem;
 }
 
-.btn-show-all:hover  {
+.btn-show-all:hover {
   transform: translateY(8px);
 }
 
