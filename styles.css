@@ -34,6 +34,7 @@ html {
 /* start of the hamburger */
 header {
   margin: 100px;
+  padding: 0;
 }
 
 input {
@@ -42,28 +43,25 @@ input {
 
 .menu-hamb {
   width: 100vw;
-  height: 80px;
-  position: fixed;
-  transition: .5s ease-in-out;
+  height: 10px;
 }
-
 
 input:checked~label .menu-hamb {
   background: #fff;
   width: 100vw;
-  height:30vh;
+  height:45vh;
   position:unset;
 }
 
 .hamburguer {
-  display: block;
+  display: flex;
   width: 40px;
   height: 5px;
   background: black;
   position: relative;
   left: 85%;
   top: -30px;
-  transition: .5s ease-in-out;
+
 }
 
 .hamburguer:after,
@@ -192,8 +190,6 @@ img {
 .nav-list a {
   display: block;
   font-size: 2.2rem;
-  padding: 2rem;
-  font-size: 2.5rem;
   transform: translateY(8px);
 }
 
@@ -204,13 +200,15 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
 }
 
 .welcome-section>p {
-  font-size: 3rem;
-  font-weight: 200;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 20px;
 }
 
 /* Projects section */
@@ -249,10 +247,6 @@ img {
   .projects-grid {
     grid-template-columns: 1fr;
   }
-}
-
-.project {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 
