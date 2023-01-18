@@ -110,7 +110,6 @@ a {
 .projects-section {
 	display: flex;
 	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
 	margin: -7rem -7rem;
 }
 
@@ -119,7 +118,6 @@ a {
 	flex: 1 0 24rem;
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
 }
 
@@ -142,6 +140,7 @@ a {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 300;
+  padding: 8rem 0;
 }
 
 .btn-show-all:hover {
@@ -183,4 +182,3 @@ footer>p {
   font-weight: 500;
 
 }
-
