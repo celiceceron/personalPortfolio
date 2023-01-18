@@ -3,120 +3,111 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Portfolio Celice</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-
 </head>
-<!-- START BURGUER -->
-<header>
-    <input id="check" type="checkbox">
-    <label for="check">
-        <div class="menu-hamb">
-            <span class="hamburguer"></span>
-        </div>
-    </label>
-
-    <ul class="ul-mbl">
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-</header>
-<!-- THE END BURGUER -->
 
 <body>
+    <!-- START MENU -->
+    <header>
+        <i id="burguer" class="material-symbols-outlined" onclick= "clickMenu()">menu</i>
+        <menu id="itens"> 
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </menu>
+    </header>
+    <!-- THE END MENU -->
+
     <!-- START WELCOME SECTION -->
-
     <section id="welcome-section" class="welcome-section">
-        <h1>Hey, I am Celice Ceron</h1>
-        <p>a web developer</p>
+        <h1>Hey, I am Celice Ceron a web developer.</h1>
     </section>
-
     <!-- END WELCOME SECTION -->
 
+
     <!-- START PROJECTS SECTION -->
-
     <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">These are some of my projects</h2>
-
         <div class="projects-grid">
-            <a href="https://codepen.io/celiceceron/full/MWBvaYK" target="_blank" class="project project-tile">
-                <img class="project-image" src="img.png/tribute.jpeg" alt="project" />
-                <p class="project-title">
-                    <span class="code"></span>
-                    Tribute Page
-                    <span class="code"></span>
-                </p>
+
+            <div class="wrapper"> <a href="https://codepen.io/celiceceron/full/MWBvaYK">
+                    <div class="tribute-page">
+                        <span class="tribute-text">Tribute Page</span>
+                    </div>
+            </div>
             </a>
-            <a href="https://codepen.io/celiceceron/full/bGjRxZL" target="_blank" class="project project-tile">
-                <img class="project-image" src="./img.png/city.png" alt="project" />
-                <p class="project-title">
-                    <span class="code"></span>
-                    City Skyline
-                    <span class="code"></span>
-                </p>
+            <div class="wrapper"> <a href="https://codepen.io/celiceceron/full/bGjRxZL">
+                    <div class="city-sky">
+                        <span class="city-text"> City Skyline</span>
+                    </div>
+            </div>
             </a>
-            <a href="https://codepen.io/celiceceron/full/jOpGLwy" target="_blank" class="project project-tile">
-                <img class="project-image" src="./img.png/wash.png" alt="project" />
-                <p class="project-title">
-                    <span class="code"></span>
-                    Turing Wash
-                    <span class="code"></span>
-                </p>
+            <div class="wrapper3"> <a href="https://codepen.io/celiceceron/full/jOpGLwy">
+                    <div class="turing-wash">
+                        <span class="turing-text"> Turing Wash </span>
+                    </div>
+            </div>
             </a>
-            <a href="https://codepen.io/celiceceron/full/YzjZgdX" target="_blank" class="project project-tile">
-                <img class="project-image" src="./img.png/cafe.png" alt="project" />
-                <p class="project-title">
-                    <span class="code"></span>
-                    Cafe Menu
-                    <span class="code"></span>
-                </p>
+            <div class="wrapper4"> <a href="https://codepen.io/celiceceron/full/YzjZgdX">
+                    <div class="cafe-menu">
+                        <span class="cafe-text"> Cafe Menu </span>
+                    </div>
+            </div>
             </a>
-            <a href="https://codepen.io/celiceceron/full/VwBzvex" target="_blank" class="project project-tile">
-                <img class="project-image" src="./img.png/product.png" alt="project" />
-                <p class="project-title">
-                    <span class="code"></span>
-                    Product Landing Page
-                    <span class="code"></span>
-                </p>
+            <div class="wrapper5"> <a href="https://codepen.io/celiceceron/full/VwBzvex">
+                    <div class="product-page">
+                        <span class="product-text"> Product Landing Page </span>
+                    </div>
+            </div>
+            </a>
+            <div class="wrapper6"> <a href="">
+                    <div class="novo-projeto">
+                        <span class="novo-text"> Novo Projeto </span>
+                    </div>
+            </div>
             </a>
         </div>
+    </section>
 
-        <a href="https://codepen.io/celiceceron" class="btn btn-show-all" target="_blank">Show all > <i
-                class="fas fa-chevron-right"></i>
+
+    <section id="show-all">
+        <div class="btn-show-all">
+
+            <a href="https://codepen.io/celiceceron"></a> <span> Show all > </span> <i class="btn-right"></i>
             </i></a>
+        </div>
     </section>
 
     <!-- END PROJECTS SECTION -->
 
     <!-- START CONTACT SECTION -->
-    <!-- CRIAR FORM -->
-    <section id="contact" class="contact-section">
-        <div class="contact-section-header">
+    <section id="work">
+        <div class="work-together">
             <h2>Let's work together</h2>
-        </div>
-        <div class="contact-links">
-            <a id="profile-link" href="https://github.com/celiceceron" target="_blank" class="btn contact-details"><i
-                    class="fab fa-github"></i> GitHub</a>
-
-            <a href="" class="btn contact-details"><i class="fas fa-at"></i> Contact </a>
         </div>
     </section>
 
-    <!-- END CONTACT SECTION -->
+    <section id="contact">
+        <div class="contact-section">
+            <a id="github-link" href="https://github.com/celiceceron"><i class="btn-github"></i> GitHub</a>
 
+            <a id="linkedin-link" href="linkedin.com/in/celice-ceron"><i class="btn-linkedin"></i> Contact </a>
+        </div>
+    </section>
+    <!-- END CONTACT SECTION -->
     <!-- START FOOTER SECTION -->
 
     <footer>
         <p>
             A collaborative web developer partnering with people doing great things.
         </p>
-
     </footer>
 
     <!-- END FOOTER SECTION -->
