@@ -49,32 +49,18 @@ i#burguer:hover{
   color: black;
 }
 
-
-
-
-
-.itens{
+.material-symbols-outlined{
   font-weight: 500;
   font-size: 5rem;
-  text-align: center;
+}
 
+.style-itens{
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 120px;
 }
-input:checked~.ul-mbl {
-  opacity: 1;
-}
-input:checked~label .menu-hamb {
-  height: 80vh;
-  color:red;
-}
-/* largura do menu? */
 
-/* about/ work/ contact */
-
-.ul-mbl a {
-  text-transform: uppercase;
-}
 /* End of hamburger */
-/* Base styles */
 
 
 
