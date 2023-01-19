@@ -1,38 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-
-html, body {
-  background-color: white;
-	min-height: 100vh;
-  margin: 0;
-}
-
-@media (min-width: 1400px) {
-  html {
-    width: 90% !important;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1600px) {
-  html {
-    width: 75% !important;
-    margin: 0 auto;
-  }
-}
-
-.mobile,
 html {
-  width: 100%;
+  background-color: white;
+  min-height: 100vh;
+  margin: 0;
 }
 
 
@@ -42,7 +11,7 @@ header {
 }
 
 
-i#burguer{
+i#burguer {
   color: black;
   display: block;
   text-align: right;
@@ -50,22 +19,23 @@ i#burguer{
   cursor: pointer;
 }
 
-i#burguer:hover{
+i#burguer:hover {
   color: black;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
   font-weight: 400;
   font-size: 4rem;
 }
 
-.style-itens{
+.style-itens {
   font-weight: 500;
   font-size: 5rem;
   line-height: 120px;
   width: 100%;
   text-align: center;
 }
+
 /* End of hamburger */
 
 
@@ -80,6 +50,7 @@ ul {
   list-style: none;
 }
 
+
 a {
   text-decoration: none;
   color: black;
@@ -87,75 +58,93 @@ a {
 
 /* Projects section */
 
-.container {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.tribute-page{
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  color: white;
-  font-weight: 500;
-  padding: 10px;
-  font-size: 1.5rem;
-}
-
-.heading {
-	font-size: 5rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 10rem 0;
-	color: black;
-}
-
-.heading span {
-	display: block;
-}
-
-.projects-section {
-	display: flex;
-	flex-wrap: wrap;
-	margin: -7rem -7rem;
-}
-
-.project-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	overflow: hidden;
-}
-
-.project-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
+.cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
 
-.project-image:hover {
-	transform: scale(1.15);
+.front,
+.back {
+  background-position: center;
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  height: auto;
+  border-radius: 10px;
+  color:white;
+  font-size: 1.5rem;
 }
 
 
-/* Show-all */
-.btn-show-all {
-  text-align: center;
+.container:hover .front {
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.front  p {
   font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  position: relative;
+  color: white;
+}
+
+.front  span {
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 64rem) {
+  .col {
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .col {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .col {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+/* Show-all section */
+.btn-show-all {
+  font-size: 1.5rem;
+  text-align: center;
   font-weight: 300;
-  padding: 8rem 0;
+}
+
+.btn-show-all {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
 }
 
 .btn-show-all:hover {
   transform: translateY(8px);
 }
+
 
 /* Contact section */
 h2 {
@@ -171,6 +160,8 @@ h2 {
   height: 40vh;
   font-size: 1.5rem;
   font-weight: 300;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
 }
 
 .contact-section:hover {
