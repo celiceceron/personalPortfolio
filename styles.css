@@ -3,55 +3,37 @@ body {
   background-color: white;
   min-height: 100vh;
   margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
-
-
-/* start of the menu */
-header {
-  margin: 100px;
-}
-
-
-i#burguer {
-  color: black;
-  display: block;
-  text-align: right;
-  padding: 10px;
-  cursor: pointer;
-}
-
-i#burguer:hover {
-  color: black;
-}
-
-.material-symbols-outlined {
-  font-weight: 400;
-  font-size: 4rem;
-}
-
-.style-itens {
-  font-weight: 500;
-  font-size: 5rem;
-  line-height: 120px;
-  width: 100%;
-  text-align: center;
-}
-
-/* End of hamburger */
-
 
 h1 {
-  font-weight: 500;
-  font-size: 5rem;
-  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
   padding-top: 5rem;
-  padding-bottom: 20rem;
+  margin-left: 2rem;
+}
+
+.networks{
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.btn-networks{
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.btn-networks:hover {
+  transform: translateY(8px);
 }
 
 ul {
   list-style: none;
 }
-
 
 a {
   text-decoration: none;
@@ -59,7 +41,7 @@ a {
 }
 
 /* Projects section */
-
+/*
 :root{
   --spacing-l: 24px;
 }
@@ -155,8 +137,9 @@ a {
   line-height: 1.4;
 }
 
-
+*/
 /* Show-all section */
+/*
 .btn-show-all {
   padding-top: 5rem;
   font-size: 1.5rem;
@@ -173,7 +156,7 @@ a {
   transform: translateY(8px);
 }
 
-
+*/
 /* Contact section */
 h2 {
   font-weight: 500;
@@ -196,11 +179,6 @@ h2 {
   transform: translateY(8px);
 }
 
-.work-together {
-  font-size: 5rem;
-  font-weight: 500;
-  text-align: center;
-}
 
 
 /* Footer */
