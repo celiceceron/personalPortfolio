@@ -10,8 +10,20 @@ h1 {
   font-weight: 400;
   font-size: 24px;
   text-align: left;
-  padding-top: 5rem;
   margin-left: 2rem;
+}
+
+.my{
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+hr{
+  color: black;
+  margin-right: 2rem;
 }
 
 .networks{
@@ -166,25 +178,24 @@ h2 {
 }
 
 
-.contact-section {
-  text-align: center;
-  height: 40vh;
-  font-size: 1.5rem;
-  font-weight: 300;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-}
-
-.contact-section:hover {
-  transform: translateY(8px);
-}
-
 
 
 /* Footer */
-footer>p {
-  padding: 2rem;
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: 500;
+h3{
+  font-size: 17px;
+  text-align: left;
+  font-weight: 400;
+  padding-bottom: 10rem;
 }
+.reserved{
+  font-size: 14px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  padding-bottom: auto;
+  font-weight: 400;
+}
+
+
+
+
