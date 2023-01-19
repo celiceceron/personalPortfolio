@@ -1,4 +1,5 @@
-html {
+html,
+body {
   background-color: white;
   min-height: 100vh;
   margin: 0;
@@ -44,6 +45,7 @@ h1 {
   font-size: 5rem;
   text-align: center;
   padding-top: 5rem;
+  padding-bottom: 20rem;
 }
 
 ul {
@@ -59,15 +61,7 @@ a {
 /* Projects section */
 
 :root{
- 
-  --text-light:white;
-  --text-lighter: white;
-  --spacing-s: 8px;
-  --spacing-m: 16px;
   --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 64px;
-  --width-container: 1200px;
 }
 
 *{
@@ -76,25 +70,20 @@ a {
   padding: 0;
 }
 
-body{
-  height: 100%;
-}
 
 .hero-section{
   align-items: flex-start;
   display: flex;
-  min-height: 100%;
+  height: 100%;
   justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
 }
 
 .card-grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
-  width: 100%;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  width: 70%;
 }
 
 @media(min-width: 540px){
@@ -124,7 +113,6 @@ body{
 .card__background{
   background-size: cover;
   background-position: center;
-  border-radius: var(--spacing-l);
   bottom: 0;
   filter: brightness(0.75) saturate(1.2) contrast(0.85);
   left: 0;
@@ -170,6 +158,7 @@ body{
 
 /* Show-all section */
 .btn-show-all {
+  padding-top: 5rem;
   font-size: 1.5rem;
   text-align: center;
   font-weight: 300;
