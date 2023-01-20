@@ -58,20 +58,29 @@ a {
   padding: 0;
 }
 
-.wrapper{
-font-family: 'IBM Plex Sans', sans-serif;
+.wrapper {
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .cols {
   display: flex;
   flex-wrap: wrap;
-  grid-column-gap:8rem;
+  /*grid-column-gap:8rem;*/
+  justify-content: left;
 }
 
 .col {
-  width: calc(25% - 0.5rem);
+  width: calc(30% - 1rem);
+  /*
   margin-left: 2rem;
   margin-top: 0.5rem;
+  margin-right: 2rem;
+  */
+margin:0.5rem;
+
+
+
+ 
 }
 
 .container {
@@ -83,12 +92,14 @@ font-family: 'IBM Plex Sans', sans-serif;
 .front,
 .back {
   backface-visibility: hidden;
-  width: 500px;
   height: 300px;
   color: #fff;
   font-size: 14px;
   text-align: left;
+  margin-block-end: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
+
 /* ALTURA E LARGURA DO CARD*/
 
 .back {
@@ -97,6 +108,7 @@ font-family: 'IBM Plex Sans', sans-serif;
   font-size: 14px;
   text-align: left;
 }
+
 /* TEXTO VERSO DO CARD*/
 
 /*
