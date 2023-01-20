@@ -11,6 +11,7 @@ h1 {
   text-align: left;
   margin-left: 2rem;
   padding-bottom: 10rem;
+  padding-top: 1rem;
 }
 
 .my{
@@ -18,7 +19,6 @@ h1 {
   font-size: 14px;
   text-align: left;
   margin-left: 2rem;
-  margin-top: 2rem;
 }
 
 hr{
@@ -56,70 +56,54 @@ a {
 *{
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-.wrapper{
-  margin: 2rem;
-}
 
 .cols{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .col{
   width: calc(25% - 1rem);
-  cursor: pointer;
   margin: 2rem;
 }
 
 .container{
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-	-webkit-perspective: 1000px;
-	        perspective: 1000px;
+   transform-style: preserve-3d;
 }
+
+
+
 
 .front,
 .back{
-  background-size: cover;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
-	background-position: center;
-	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	-webkit-backface-visibility: hidden;
-	        backface-visibility: hidden;
-	text-align: center;
+	backface-visibility: hidden;
 	min-height: 280px;
-	height: auto;
 	color: #fff;
 	font-size: 17px;
   font-weight: 400;
+  text-align: left;
 }
 
 .back{
-  background: red;
+  background: #fff;;
+  color: black;
+	font-size: 17px;
+  font-weight: 400;
+  text-align: left;
 }
+
 
 .container:hover .front,
 .container:hover .back{
-    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
+/* TRANSICAO DO CARD */
 
 .back{
   position: absolute;
@@ -129,19 +113,7 @@ a {
 }
 
 .inner{
-  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-          transform: translateY(-50%) translateZ(60px) scale(0.94);
-  top: 50%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 2rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: 1px solid transparent;
-  -webkit-perspective: inherit;
-          perspective: inherit;
-  z-index: 2;
+  padding: 1rem;
 }
 
 .container .back{
@@ -243,6 +215,7 @@ h3{
   text-align: left;
   font-weight: 400;
   padding-bottom: 10rem;
+  padding-top: 2rem;
 }
 
 .reserved{
@@ -250,7 +223,7 @@ h3{
   text-align: left;
   margin-left: 2rem;
   margin-top: 2rem;
-  padding-bottom: auto;
+  padding-bottom: 1rem;
   font-weight: 400;
 }
 
