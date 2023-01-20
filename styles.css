@@ -1,5 +1,4 @@
-html,
-body {
+html{
   background-color: white;
   min-height: 100vh;
   margin: 0;
@@ -11,6 +10,7 @@ h1 {
   font-size: 24px;
   text-align: left;
   margin-left: 2rem;
+  padding-bottom: 10rem;
 }
 
 .my{
@@ -53,31 +53,12 @@ a {
 }
 
 /* Projects section */
-/*
-:root{
-  --spacing-l: 24px;
-}
-
-*{
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-
-.hero-section{
-  align-items: flex-start;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-}
-
 .card-grid{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
-  width: 70%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-left: 2rem;
 }
 
 @media(min-width: 540px){
@@ -92,10 +73,31 @@ a {
   }
 }
 
+.card__category{
+  color: black;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.card__heading{
+  color: black;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 17px;
+  font-weight: 400;
+}
+
 .card{
   list-style: none;
   position: relative;
 }
+
+
+
+/* Columns */
+/*
 
 .card:before{
   content: '';
@@ -104,20 +106,13 @@ a {
   width: 100%;
 }
 
-.card__background{
-  background-size: cover;
-  background-position: center;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+
+/*
+.card__content{
   left: 0;
+  padding: 24px;
   position: absolute;
-  right: 0;
   top: 0;
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
 }
 
 .card:hover .card__background{
@@ -128,35 +123,21 @@ a {
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 }
 
-.card__content{
-  left: 0;
-  padding: var(--spacing-l);
-  position: absolute;
-  top: 0;
-}
 
-.card__category{
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
-  line-height: 1.4;
-}
 
-.card__heading{
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
-  line-height: 1.4;
-}
 
-*/
+
+
+
+
+
 /* Show-all section */
-/*
 .btn-show-all {
   padding-top: 5rem;
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: 300;
+  font-size: 17px;
+  text-align: left;
+  font-weight: 400;
+  margin-left: 2rem;
 }
 
 .btn-show-all {
@@ -168,16 +149,6 @@ a {
   transform: translateY(8px);
 }
 
-*/
-/* Contact section */
-h2 {
-  font-weight: 500;
-  font-size: 5rem;
-  text-align: center;
-  padding: 10rem 0;
-}
-
-
 
 
 /* Footer */
@@ -187,6 +158,7 @@ h3{
   font-weight: 400;
   padding-bottom: 10rem;
 }
+
 .reserved{
   font-size: 14px;
   text-align: left;
