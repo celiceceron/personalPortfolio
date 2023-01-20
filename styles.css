@@ -1,4 +1,4 @@
-html{
+html {
   background-color: white;
   min-height: 100vh;
   margin: 0;
@@ -14,19 +14,19 @@ h1 {
   padding-top: 1rem;
 }
 
-.my{
+.my {
   font-weight: 400;
   font-size: 14px;
   text-align: left;
   margin-left: 2rem;
 }
 
-hr{
+hr {
   color: black;
   margin-right: 2rem;
 }
 
-.networks{
+.networks {
   font-weight: 400;
   font-size: 14px;
   text-align: right;
@@ -34,7 +34,7 @@ hr{
   margin-top: 2rem;
 }
 
-.btn-networks{
+.btn-networks {
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
@@ -53,137 +53,117 @@ a {
 }
 
 /* Projects section */
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
+.wrapper{
+font-family: 'IBM Plex Sans', sans-serif;
+}
 
-.cols{
+.cols {
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+  grid-column-gap:8rem;
 }
 
-.col{
-  width: calc(25% - 1rem);
-  margin: 2rem;
+.col {
+  width: calc(25% - 0.5rem);
+  margin-left: 2rem;
+  margin-top: 0.5rem;
 }
 
-.container{
+.container {
   -webkit-transform-style: preserve-3d;
-   transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
-
 
 
 .front,
-.back{
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	min-height: 280px;
-	color: #fff;
-	font-size: 17px;
-  font-weight: 400;
+.back {
+  backface-visibility: hidden;
+  width: 500px;
+  height: 300px;
+  color: #fff;
+  font-size: 14px;
   text-align: left;
 }
+/* ALTURA E LARGURA DO CARD*/
 
-.back{
-  background: #fff;;
+.back {
+  background: #fff;
   color: black;
-	font-size: 17px;
-  font-weight: 400;
+  font-size: 14px;
   text-align: left;
 }
+/* TEXTO VERSO DO CARD*/
 
-
+/*
 .container:hover .front,
-.container:hover .back{
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+.container:hover .back {
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 /* TRANSICAO DO CARD */
 
-.back{
+
+
+.back {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
 }
 
-.inner{
+.inner {
   padding: 1rem;
+  text-align: left;
 }
 
-.container .back{
+.container .back {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform: rotateY(180deg);
 }
 
-.container .front{
+
+.container:hover .back {
   -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform: rotateY(0deg);
 }
 
-
-.container:hover .back{
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.container:hover .front{
+.container:hover .front {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform: rotateY(-180deg);
 }
 
-.front .inner p{
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  position: relative;
+.front .inner p {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
-.front .inner p:after{
-  content: '';
-  width: 4rem;
-  height: 2px;
-  position: absolute;
-  background: #C6D4DF;
-  display: block;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -.75rem;
+
+.front .inner span {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
-.front .inner span{
-  color: rgba(255,255,255,0.7);
-  font-family: 'Montserrat';
-  font-weight: 300;
-}
 
-@media screen and (max-width: 64rem){
-  .col{
+@media screen and (max-width: 64rem) {
+  .col {
     width: calc(33.333333% - 2rem);
   }
 }
 
-@media screen and (max-width: 48rem){
-  .col{
+@media screen and (max-width: 48rem) {
+  .col {
     width: calc(50% - 2rem);
   }
 }
 
-@media screen and (max-width: 32rem){
-  .col{
+@media screen and (max-width: 32rem) {
+  .col {
     width: 100%;
     margin: 0 0 2rem 0;
   }
@@ -210,7 +190,7 @@ a {
 
 
 /* Footer */
-h3{
+h3 {
   font-size: 17px;
   text-align: left;
   font-weight: 400;
@@ -218,7 +198,7 @@ h3{
   padding-top: 2rem;
 }
 
-.reserved{
+.reserved {
   font-size: 14px;
   text-align: left;
   margin-left: 2rem;
@@ -226,7 +206,3 @@ h3{
   padding-bottom: 1rem;
   font-weight: 400;
 }
-
-
-
-
