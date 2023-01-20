@@ -1,6 +1,5 @@
 html {
   background-color: white;
-  min-height: 100vh;
   margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -71,17 +70,11 @@ a {
 .cols {
   display: flex;
   flex-wrap: wrap;
-  /*grid-column-gap:8rem;*/
   justify-content: left;
 }
 
 .col {
   width: calc(30% - 1rem);
-  /*
-  margin-left: 2rem;
-  margin-top: 0.5rem;
-  margin-right: 2rem;
-  */
   margin: 0.5rem;
 }
 
@@ -101,7 +94,6 @@ a {
   margin-block-end: 0.5rem;
   margin-inline-end: 0.5rem;
 }
-
 /* ALTURA E LARGURA DO CARD*/
 
 .back {
@@ -110,7 +102,6 @@ a {
   font-size: 14px;
   text-align: left;
 }
-
 /* TEXTO VERSO DO CARD*/
 
 /*
@@ -176,6 +167,7 @@ a {
   }
 }
 
+
 @media screen and (max-width: 32rem) {
   .col {
     width: 100%;
@@ -191,17 +183,14 @@ a {
   font-weight: 400;
   margin-left: 2rem;
   padding-bottom: 2rem;
-}
-
-.btn-show-all {
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
 
+
 .btn-show-all:hover {
   transform: translateY(8px);
 }
-
 
 
 /* Footer */
@@ -212,6 +201,7 @@ h3 {
   padding-bottom: 10rem;
   padding-top: 2rem;
 }
+
 
 .reserved {
   font-size: 14px;
