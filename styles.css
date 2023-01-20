@@ -21,11 +21,13 @@ h1 {
   margin-left: 2rem;
   margin-bottom: 1rem;
   padding-top: 2rem;
+  line-height: 2rem;
 }
 
 hr {
   color: black;
   margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .networks {
@@ -188,6 +190,7 @@ a {
   text-align: left;
   font-weight: 400;
   margin-left: 2rem;
+  padding-bottom: 2rem;
 }
 
 .btn-show-all {
