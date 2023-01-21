@@ -1,6 +1,5 @@
 html {
   background-color: white;
-  margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -231,7 +230,8 @@ h3 {
   font-size: 14px;
   text-align: left;
   margin-left: 2rem;
-  margin-top: 2rem;
   padding-bottom: 1rem;
   font-weight: 400;
 }
+
+
