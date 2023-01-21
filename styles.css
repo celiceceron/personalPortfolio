@@ -4,6 +4,7 @@ html {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+
 h1 {
   font-weight: 400;
   font-size: 24px;
@@ -12,6 +13,7 @@ h1 {
   padding-bottom: 10rem;
   padding-top: 1rem;
 }
+
 
 .my {
   font-weight: 400;
@@ -162,6 +164,23 @@ a {
   .col {
     width: calc(33.333333% - 2rem);
   }
+
+  h1{
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .networks{
+    font-size: 15px;
+  }
+
+  .my{
+    font-size: 15px;
+  }
+
+  .btn-show-all {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 48rem) {
@@ -170,13 +189,14 @@ a {
   }
 }
 
-
 @media screen and (max-width: 32rem) {
   .col {
     width: 100%;
     margin: 0 0 2rem 0;
   }
 }
+
+
 
 /* Show-all section */
 .btn-show-all {
@@ -203,6 +223,7 @@ h3 {
   font-weight: 400;
   padding-bottom: 10rem;
   padding-top: 2rem;
+  padding-left: 2rem;
 }
 
 
