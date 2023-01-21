@@ -169,7 +169,8 @@ a {
     font-size: 20px;
   }
 
-  .networks{
+  .networks,
+  .btn-networks{
     font-size: 15px;
   }
 
