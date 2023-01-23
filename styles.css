@@ -4,16 +4,14 @@ html {
   width: 100%;
 }
 
-
 h1 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   text-align: left;
   margin-left: 2rem;
   padding-bottom: 10rem;
   padding-top: 1rem;
 }
-
 
 .my {
   font-weight: 400;
@@ -57,7 +55,6 @@ a {
   color: black;
 }
 
-
 /* Projects section */
 * {
   margin: 0;
@@ -85,7 +82,6 @@ a {
   transform-style: preserve-3d;
 }
 
-
 .front,
 .back {
   backface-visibility: hidden;
@@ -96,7 +92,6 @@ a {
   margin-block-end: 0.5rem;
   margin-inline-end: 0.5rem;
 }
-
 /* ALTURA E LARGURA DO CARD*/
 
 .back {
@@ -109,16 +104,6 @@ a {
 }
 /* TEXTO VERSO DO CARD*/
 
-/*
-.container:hover .front,
-.container:hover .back {
-  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-/* TRANSICAO DO CARD */
-
-
-
 .back {
   position: absolute;
   top: 0;
@@ -127,7 +112,6 @@ a {
 .back p {
   line-height: 2rem;
 }
-
 
 .inner {
   padding: 1rem;
@@ -138,7 +122,6 @@ a {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
 
 .container:hover .back {
   -webkit-transform: rotateY(0deg);
@@ -156,7 +139,6 @@ a {
   margin-bottom: 1rem;
 }
 
-
 .front .inner span {
   color: #fff;
   font-size: 14px;
@@ -164,47 +146,8 @@ a {
   margin-bottom: 1rem;
 }
 
-/*
-@media screen and (max-width: 64rem) {
-  .col {
-    width: calc(33.333333% - 2rem);
-  }
-
-  h1{
-    font-weight: 400;
-    font-size: 20px;
-  }
-
-  .networks,
-  .btn-networks{
-    font-size: 15px;
-  }
-
-  .my{
-    font-size: 15px;
-  }
-
-  .btn-show-all {
-    font-size: 15px;
-  }
-}
-
-
-@media screen and (max-width: 48rem) {
-  .col {
-    width: calc(50% - 2rem);
-  }
-}
-
-@media screen and (max-width: 32rem) {
-  .col {
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
-}
-*/
-
-@media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) {
+/*@media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px)*/
+@media screen and (max-width: 64rem){
   .my,
   .networks,
   .btn-show-all,
@@ -228,7 +171,6 @@ a {
     margin: 0.5rem;
   }
 }
-
 
 
 /* Show-all section */
