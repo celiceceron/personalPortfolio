@@ -204,7 +204,7 @@ a {
 }
 */
 
-@media (max-width: 1000px) {
+@media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) {
   .my,
   .networks,
   .btn-show-all,
@@ -221,13 +221,11 @@ a {
 
   .cols{
     display: grid;
-    max-width: 720px;
   }
 
   .col {
-    width: calc(100% - 1rem);
+    width: 100%;
     margin: 0.5rem;
-    max-width: 720px;
   }
 }
 
