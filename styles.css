@@ -1,6 +1,7 @@
 html {
   background-color: white;
   font-family: 'Inter', sans-serif;
+  width: 100%;
 }
 
 
@@ -220,13 +221,17 @@ a {
 
   .cols{
     display: grid;
+    max-width: 720px;
   }
 
   .col {
     width: calc(100% - 1rem);
     margin: 0.5rem;
+    max-width: 720px;
   }
 }
+
+
 
 /* Show-all section */
 .btn-show-all {
