@@ -102,7 +102,6 @@ a {
   color: black;
   font-size: 14px;
   text-align: left;
-  line-height: 2rem;
   margin-block-end: 0.5rem;
   margin-inline-end: 0.5rem;
 }
@@ -122,6 +121,11 @@ a {
   position: absolute;
   top: 0;
 }
+
+.back p {
+  line-height: 2rem;
+}
+
 
 .inner {
   padding: 1rem;
@@ -235,8 +239,6 @@ h3 {
   font-weight: 400;
 }
 
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
+
 
 
