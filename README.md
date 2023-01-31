@@ -8,10 +8,7 @@ Full-Stack Engineer. <br>
 https://celicewebdeveloper.netlify.app/ 
 
 ## Gif Demonstration Web
-![Web 1]()
-
-## Gif Demonstration Mobile
-![Web 1]()
+![Web 1](https://github.com/celiceceron/personalPortfolio/blob/a21508981f84f8830afa755518aa1349aeeb453c/web%20page.gif)
 
 # Technologies and tools I use
 ## Front end
