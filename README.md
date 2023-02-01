@@ -7,7 +7,7 @@ Currently I study at Codecademy, Career Path
 Full-Stack Engineer. <br>
 https://celicewebdeveloper.netlify.app/ 
 
-## Gif Demonstration Web
+## Gif demonstration
 ![Web 1](https://github.com/celiceceron/personalPortfolio/blob/a21508981f84f8830afa755518aa1349aeeb453c/web%20page.gif)
 
 # Technologies and tools I use
